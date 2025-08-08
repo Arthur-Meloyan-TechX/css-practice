@@ -1,228 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>CSS Layout Practice Page</title>
-        <style>
-            /* Reset default browser styles */
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="position-fixed">Fixed</div>
-        <div class="main">
-            <header class="header">
-                <h1 class="layout-practice">CSS Layout Practice Page</h1>
-                <p class="paragraph">Practice CSS Grid, Flexbox, Positioning, Media Queries, and More!</p>
-            </header>
-            <!--CSS GRID-->
-            <section class="slide">
-                <h2 class="slide-header">🔲 CSS Grid Practice</h2>
-                <h3 class="slide-subheader">Basic Grid (Auto-fit & Minmax)</h3>
-                <div class="basic-grid-container">
-                    <div class="item">Grid Item 1</div>
-                    <div class="item">Grid Item 2</div>
-                    <div class="item">Grid Item 3</div>
-                    <div class="item">Grid Item 4</div>
-                    <div class="item">Grid Item 5</div>
-                    <div class="item">Grid Item 6</div>
-                </div>
-                <h3 class="slide-subheader">Advanced Grid Layout</h3>
-                <div class="advanced-grid-container">
-                    <div class="item advanced-grid-header">Header (spans 3 columns)</div>
-                    <div class="item side-bar">Sidebar</div>
-                    <div class="item footer-left">Footer Left</div>
-                    <div class="item ads">Ads</div>
-                    <div class="item footer-right">Footer Right</div>
-                    <div class="item main-content">Main Content</div>
-                </div>
-            </section>
-            <section class="slide">
-                <h2 class="slide-header">📦 Flexbox Practice</h2>
-                <h3 class="slide-subheader">Flexible Items</h3>
-                <div class="flex-items-container">
-                    <div class="item flex-item">Flex Item 1</div>
-                    <div class="item flex-item">Flex Item 2</div>
-                    <div class="item flex-item">Flex Item 3</div>
-                </div>
-                <h3 class="slide-subheader">Flex Direction & Alignment</h3>
-                <div class="flex-direction-container">
-                    <div class="item left">Left</div>
-                    <div class="item center">Center</div>
-                    <div class="item right">Right</div>
-                </div>
-                <div class="flex-columns-container">
-                    <div class="item flex-item">Column Item 1</div>
-                    <div class="item flex-item">Column Item 2</div>
-                    <div class="item flex-item">Column Item 3</div>
-            </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverifi Copy</title>
+    <link rel="stylesheet" href="styles.css">
 
-            <section class="slide">
-                <h2 class="slide-header">📍 Position Practice</h2>
-                <div class="item sticky-header">Sticky Header (scroll to see effect)</div>
-                <div class="position-container">
-                    <div class="item relative-container">Realtive Container</div>
-                    <div class="item absolute-position">Absolute Position</div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+
+            <!--Hamburger button for mobile-->
+            <button class="hamburger">
+                <img src="icons/menu.svg">
+            </button>
+
+            <a href="#" class="logo">
+                <img src="icons/reverifi-logo-green.svg" alt="Reverifi Logo">
+            </a>
+            <div></div>
+
+            <!--Navigations and buttons for desktop-->
+            <div class="header-right-group">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">How we Work</a></li>
+                        <li><a href="#">Find an Agent</a></li>
+                        <li><a href="#">Knowledge Center</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="#" class="btn btn-secondary">Sign In</a>
+                    <a href="#" class="btn btn-primary">Join Now</a>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="top-container">
+                    <h1>Search our listings for your next purchase</h1>
+                    <form class="search-form">
+                        <img src="icons/location-grey.svg" alt="Location" class="search-icon">
+                        <input type="text" class="search-input" id="search-input" placeholder="Enter City, neighborhood, ZIP, or address">
+                        <button type="submit" class="search-button">
+                            <img src="icons/search.svg" alt="Search">
+                        </button>
+                    </form>
                 </div>
                 
-                <p style="color: #333">Notice the fixed position element in the bottom-right corner!</p>
-            </section>
-            <section class="slide">
-                <h2 class="slide-header">📊 Table Practice</h2>
-                <h3 class="slide-subheader">Styled Data Table</h3>
-                <div class="table-container">
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Department</th>
-                                <th>Salary</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>John Doe</td>
-                                <td>Frontend Developer</td>
-                                <td>Engineering</td>
-                                <td>$75,000</td>  
-                                <td>Active</td>              
-                            </tr>
-                            <tr>
-                                <td>Jane Smith</td>
-                                <td>UX Designer</td>
-                                <td>Design</td>
-                                <td>$68,000</td>
-                                <td>Active</td>
-                            </tr>
-                            <tr>
-                                <td>Mike Johnson</td>
-                                <td>Backend Developer</td>
-                                <td>Engineering</td>
-                                <td>$80,000</td>
-                                <td>On Leave</td>
-                            </tr>
-                            <tr>
-                                <td>Sarah Wilson</td>
-                                <td>Product Manager</td>
-                                <td>Product</td>
-                                <td>$90,000</td>
-                                <td>Active</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="hero-logo">
+                    <img src="icons/home-icon.svg" alt="House">
                 </div>
-                <h3 class="slide-subheader">Responsive Card Layout (Alternative to Tables)</h3>
-                <div class="responsive-table">
-                    <div class="card">
-                        <h4>John Doe</h4>
-                        <p><strong>Position:</strong> Frontend Developer</p>
-                        <p><strong>Department:</strong> Engineering</p>
-                        <p><strong>Salary:</strong> $75,000</p>
-                    </div>
-                    <div class="card">
-                        <h4>Jane Smith</h4>
-                        <p><strong>Position:</strong> UX Designer</p>
-                        <p><strong>Department:</strong> Design</p>
-                        <p><strong>Salary:</strong> $68,000</p>
-                    </div>
-                    <div class="card">
-                        <h4>Mike Johnson</h4>
-                        <p><strong>Position:</strong> Backend Developer</p>
-                        <p><strong>Department:</strong> Engineering</p>
-                        <p><strong>Salary:</strong> $80,000</p>
-                    </div> 
-            </section>
+            </div>
+        </section>
 
-            <section class="slide">
-                <h2 class="slide-header">📝 Form & Input Practice</h2>
-                <div class="form-container">
-                    <div class="form-grid">
-                        <div>
-                            <h3>Text Inputs</h3>
-                            <div class="input-group">
-                                <label for="name">Full Name</label>
-                                <input type="text" id="name" class="styled-input" placeholder="Enter your full name">
-                            </div>
-                        
-                            <div class="input-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" class="styled-input input-success" placeholder="your@email.com" value="john@example.com">
-                            </div>
-                            <div class="input-group">
-                                <label for="password">Password</label>
-                                <input type="password" id="password" class="styled-input input-error" placeholder="Enter password">
-                            </div>
-                            <div class="input-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" class="styled-input" placeholder="+1 (555) 123-4567">
-                            </div>
+        <section class="featured">
+            <div class="container">
+                <h2 class="section-title">Our Featured Listing</h2>
+                <div class="listing-card">
+                    <div>
+                        <div class="card-image">
+                            <img src="images/appartment.png" class="appartment" alt="Living room of the appartment">
+                            <span class="tag">New</span>
+                            <img src="images/avatar.png" alt="Real estate agent" class="agent-avatar">
                         </div>
-                        <div>
-                            <h3>Select & Options</h3>
-                            <div class="input-group">
-                                <label for="country">Country</label>
-                                <select id="country" class="styled-select">
-                                    <option value>Select a country</option>
-                                    <option value="us">United States</option>
-                                    <option value="ca">Canada</option>
-                                    <option value="uk">United Kingdom</option>
-                                    <option value="gr">Germany</option>
-                                    <option value="fr">France</option>
-                                </select>
+                        <div class="card-body">
+                            <div class="card-header">
+                                <h3>Appartment#1</h3>
+                                <span class="distance">
+                                    <img src="icons/location-grey.svg" alt="distance">
+                                    1.1km away
+                                </span> 
                             </div>
-                            <div class="input-group">
-                                <label>Preferred Contact Method</label>
-                                <div class="radio-group">
-                                    <div class="radio-item">
-                                        <input class="styled-radio" type="radio" id="contact-email" name="contact-method" value="email">
-                                        <label for="contact-email">Email</label>
-                                    </div>
-                                    <div class="radio-item">
-                                        <input class="styled-radio" type="radio" id="contact-phone" name="contact-method" value="phone">
-                                        <label for="contact-phone">Phone</label>
-                                    </div>
-                                    <div class="radio-item">
-                                        <input class="styled-radio" type="radio" id="contact-sms" name="contact-method" value="sms">
-                                        <label for="contact-sms">SMS</label>
-                                    </div>
-                                </div>
+                            <p class="address">Bronx, NY 10459</p>
+                            <div class="card-features">
+                                <span><img src="icons/2.svg" alt="2"></span>
+                                <span><img src="icons/bedroom.svg" alt="bedroom"></span>
+                                <span><img src="icons/wifi.svg" alt="WiFi"></span>
+                                <span><img src="icons/bathroom.svg" alt="Bathroom"></span>
+                                <span><img src="icons/air-conditioner.svg" alt="Air Conditioner"></span>
+                                <span><img src="icons/bench.svg" alt="Bench"></span>
                             </div>
-                            <div class="input-group">
-                                <div class="checkbox-group">
-                                    <input class="styled-checkbox" type="checkbox" id="subscribe" name="subscribe">
-                                    <label for="subscribe">Subscribe to newsletter</label>
-                                </div>
-                                <div class="checkbox-group">
-                                    <input class="styled-checkbox" type="checkbox" id="terms" name="terms" required>
-                                    <label for="terms">I agree to the terms and conditions</label>
+                            <div class="card-footer">
+                                <p class="price">$30,000</p>
+                                <div class="card-actions">
+                                    <button class="action-btn"><img src="icons/heart.svg" alt="Favoirte"></button>
+                                    <button class="action-btn"><img src="icons/share.svg" alt="Share"></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="input-group">
-                        <label for="message">Message</label>
-                        <div class="textarea-container">
-                            <textarea id="message" class="styled-textarea" rows="4" placeholder="Enter your message here..."></textarea>
+                    <div>
+                        <div class="card-image">
+                            <img src="images/appartment2.png" class="appartment" alt="Living room of the appartment">
+                            <span class="tag rent">Rent</span>
+                            <img src="images/avatar.png" alt="Real estate agent" class="agent-avatar">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header">
+                                <h3>Appartment#1</h3>
+                                <span class="distance">
+                                    <img src="icons/location-grey.svg" alt="distance">
+                                    1.1km away
+                                </span> 
+                            </div>
+                            <p class="address">Bronx, NY 10459</p>
+                            <div class="card-features">
+                                <span><img src="icons/2.svg" alt="2"></span>
+                                <span><img src="icons/bedroom.svg" alt="bedroom"></span>
+                                <span><img src="icons/wifi.svg" alt="WiFi"></span>
+                                <span><img src="icons/bathroom.svg" alt="Bathroom"></span>
+                                <span><img src="icons/air-conditioner.svg" alt="Air Conditioner"></span>
+                                <span><img src="icons/bench.svg" alt="Bench"></span>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">$123/Month</p>
+                                <div class="card-actions">
+                                    <button class="action-btn active"><img src="icons/heart.svg" alt="Favoirte"></button>
+                                    <button class="action-btn"><img src="icons/share.svg" alt="Share"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div>
+                        <div class="card-image">
+                            <img src="images/appartment3.png" class="appartment" alt="Living room of the appartment">
+                            <span class="tag">New</span>
+                            <span class="tag sale">Sale</span>
+                            <img src="images/avatar.png" alt="Real estate agent" class="agent-avatar">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header">
+                                <h3>Appartment#1</h3>
+                                <span class="distance">
+                                    <img src="icons/location-grey.svg" alt="distance">
+                                    1.1km away
+                                </span> 
+                            </div>
+                            <p class="address">Bronx, NY 10459</p>
+                            <div class="card-features">
+                                <span><img src="icons/2.svg" alt="2"></span>
+                                <span><img src="icons/bedroom.svg" alt="bedroom"></span>
+                                <span><img src="icons/wifi.svg" alt="WiFi"></span>
+                                <span><img src="icons/bathroom.svg" alt="Bathroom"></span>
+                                <span><img src="icons/air-conditioner.svg" alt="Air Conditioner"></span>
+                                <span><img src="icons/bench.svg" alt="Bench"></span>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">$30,000</p>
+                                <div class="card-actions">
+                                    <button class="action-btn"><img src="icons/heart.svg" alt="Favoirte"></button>
+                                    <button class="action-btn"><img src="icons/share.svg" alt="Share"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                     
+                </div>
+                <div class="pagination">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="events">
+            <div class="container">
+                <h2 class="section-title">Events</h2>
+                <div class="event-tabs">
+                    <button class="tab active">All</button>
+                    <button class="tab">Upcoming</button>
+                    <button class="tab">Past</button>
+                </div>
+                <div class="event-card">
+                    <div>
+                        <div class="event-card-image">
+                            <img src="images/presentation-room.png" alt="Presentation Room">
+                            <div class="event-date">
+                                <span class="day">08</span>
+                                <span class="month">OCT</span>
+                            </div>
+                            <div class="paths">
+                                <span class="path left">
+                                    <img src="icons/path-left.svg" alt="" class="left">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="event-card-body">
+                            <div class="upper-body">
+                                <h3 class="card-title">Lorem ipsum</h3>
+
+                                <div class="event-buttons">
+                                    <button class="plus-button"><img src="icons/plus-button.svg" alt=""></button>
+                                    <button class="share-button"><img src="icons/share.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <p class="event-location">7:30 - 10:30PM @someplace</p>
+                            <div class="event-info">
+                                <div class="event-attendees">
+                                    <div class="attendees-icons">
+                                        <img src="icons/people.svg" alt="" class="people">
+                                        <span class="count">182</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="input-group">
-                        <label for="date">Date</label>
-                        <input type="date" id="date" class="styled-input">
+                    <div>
+                        <div class="event-card-image">
+                            <img src="images/presentation-room.png" alt="Presentation Room">
+                            <div class="event-date">
+                                <span class="day">08</span>
+                                <span class="month">OCT</span>
+                            </div>
+                        </div>
+                        <div class="event-card-body">
+                            <div class="upper-body">
+                                <h3 class="card-title">Lorem ipsum</h3>
+
+                                <div class="event-buttons">
+                                    <button class="plus-button"><img src="icons/plus-button.svg" alt=""></button>
+                                    <button class="share-button"><img src="icons/share.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <p class="event-location">7:30 - 10:30PM @someplace</p>
+                            <div class="event-info">
+                                <div class="event-attendees">
+                                    <div class="attendees-icons">
+                                        <img src="icons/people.svg" alt="" class="people">
+                                        <span class="count">182</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <label for="range">Range Slider</label>
-                        <input type="range" id="range" min="0" max="100" value="50" style="width: 100%; accent-color: #667eea;">
+                    <div>
+                        <div class="event-card-image">
+                            <img src="images/presentation-room.png" alt="Presentation Room">
+                            <div class="event-date">
+                                <span class="day">08</span>
+                                <span class="month">OCT</span>
+                            </div>
+                            <div class="paths">
+                                <span class="path right">
+                                    <img src="icons/path-right.svg" alt="" class="right">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="event-card-body">
+                            <div class="upper-body">
+                                <h3 class="card-title">Lorem ipsum</h3>
+
+                                <div class="event-buttons">
+                                    <button class="plus-button"><img src="icons/plus-button.svg" alt=""></button>
+                                    <button class="share-button"><img src="icons/share.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <p class="event-location">7:30 - 10:30PM @someplace</p>
+                            <div class="event-info">
+                                <div class="event-attendees">
+                                    <div class="attendees-icons">
+                                        <img src="icons/people.svg" alt="" class="people">
+                                        <span class="count">182</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="event-card-image">
+                            <img src="images/presentation-room.png" alt="Presentation Room">
+                            <div class="event-date">
+                                <span class="day">08</span>
+                                <span class="month">OCT</span>
+                            </div>
+                            <div class="paths">
+                                <span class="path right">
+                                    <img src="icons/path-right.svg" alt="" class="right">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="event-card-body">
+                            <div class="upper-body">
+                                <h3 class="card-title">Lorem ipsum</h3>
+
+                                <div class="event-buttons">
+                                    <button class="plus-button"><img src="icons/plus-button.svg" alt=""></button>
+                                    <button class="share-button"><img src="icons/share.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <p class="event-location">7:30 - 10:30PM @someplace</p>
+                            <div class="event-info">
+                                <div class="event-attendees">
+                                    <div class="attendees-icons">
+                                        <img src="icons/people.svg" alt="" class="people">
+                                        <span class="count">182</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="reverifi-plus">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title"><img src="icons/reverifi+.svg" alt="reverifi+"></h2>
+                    <p class="paragraph">
+                        Search our network and find your supporting team to complete the process
+                    </p>
+                    <button class="see-more">See More</button>
+                </div>
+                <div class="section-footer">
+                    <div class="section-icons">
+
+                        <div class="service-item">
+                            <img src="icons/attorney.svg" alt="Attorney icon">
+                            <span>Attorney</span>
+                        </div>
+                    
+                        <div class="service-item">
+                            <img src="icons/camera.svg" alt="Camer icon">
+                            <span>Photographer</span>
+                        </div>
+                    
+                        <div class="service-item">
+                            <img src="icons/agent.svg" alt="Agent icon">
+                            <span>Agent</span>
+                        </div>
+                    
+                        <div class="service-item">
+                            <img src="icons/clean.svg" alt="Cleaning icon">
+                            <span>Cleaning<br>Services</span>
+                        </div>
+                    
+                        <div class="service-item">
+                            <img src="icons/inspection.svg" alt="Home Inspectors icon">
+                            <span>Home<br>Inspectors</span>
+                        </div>
+                    
+                        <div class="service-item">
+                            <img src="icons/insurance.svg" alt="Insurance Provider icon">
+                            <span>Insurance<br>Provider</span>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </div>  
-    </body>
+            </div>
+        </section>
+
+        <section class="explore">
+    <div class="container">
+        <h2 class="section-title">Explore our Listings</h2>
+        
+        <div class="explore-grid">
+            <div class="location-card nyc">
+                <img src="images/nyc.png" alt="A street in New York City" class="location-image">
+                <div class="location-overlay"></div>
+                <div class="location-content">
+                    <h3>New York</h3>
+                    <p>2 Listings</p>
+                </div>
+            </div>
+
+            <div class="location-card california">
+                <img src="images/california.png" alt="Golden Gate Bridge in California" class="location-image">
+                <div class="location-overlay"></div>
+                <div class="location-content">
+                    <h3>California</h3>
+                    <p>43 Listings</p>
+                </div>
+            </div>
+
+            <div class="location-card florida">
+                <img src="images/florida.png" alt="Beachfront in Florida" class="location-image">
+                <div class="location-overlay"></div>
+                <div class="location-content">
+                    <h3>Florida</h3>
+                    <p>23 Listings</p>
+                </div>
+            </div>
+
+            <div class="location-card hawaii">
+                <img src="images/hawaii.png" alt="Mountains in Hawaii" class="location-image">
+                <div class="location-overlay"></div>
+                <div class="location-content">
+                    <h3>Hawaii</h3>
+                    <p>53 Listings</p>
+                </div>
+            </div>
+
+            <div class="location-card alaska">
+                <img src="images/alaska.png" alt="Snowy landscape in Alaska" class="location-image">
+                <div class="location-overlay"></div>
+                <div class="location-content">
+                    <h3>Alaska</h3>
+                    <p>5 Listings</p>
+                </div>
+            </div>
+
+            <div class="location-card jersey">
+                <img src="images/new-jersey.png" alt="Cityscape of New Jersey" class="location-image">
+                <div class="location-overlay"></div>
+                <div class="location-content">
+                    <h3>New Jersey</h3>
+                    <p>89 Listings</p>
+                </div>
+            </div>
+
+            <div class="location-card georgia">
+                <img src="images/georgia.png" alt="City in Georgia" class="location-image">
+                <div class="location-overlay"></div>
+                <div class="location-content">
+                    <h3>Georgia</h3>
+                    <p>17 Listings</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+</section>
+
+        <section class="claim-address">
+            <div class="container">
+                <div class="section-center">
+                    <div class="styled-location"><img src="icons/location-styled.svg" alt=""></div>
+
+                    <h2 class="section-title">Claim your Address</h2>
+                    <form class="search-form">
+                        <img src="icons/location-grey.svg" alt="Location" class="search-icon">
+                        <input type="text" class="search-input" id="search-input" placeholder="Enter your address">
+                        <button type="submit" class="search-button">
+                            <img src="icons/search.svg" alt="Search">
+                        </button>   
+                    </form>
+                </div>
+                <div class="section-footer">
+                    <div class="footer-text">
+                        <p>Start your real estate journey with <img src="icons/reverifi-logo-white.svg" alt=""></p>
+                        <button class="join-btn">Join us</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="social-links">
+                    <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="icons/youtube.svg" alt="YouTube"></a>
+                    <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+
+                <a href="#" class="footer-logo">
+                    <img src="icons/reverifi-logo-green.svg" alt="Reverifi logo">
+                </a>
+
+                <ul class="contact-info">
+                    <li><img src="icons/location-green.svg" alt=""> 712-427-1242</li>
+                    <li><img src="icons/mail.svg" alt=""> support@example.com</li>
+                    <li><img src="icons/phone.svg" alt=""> 319-764-9876</li>
+                </ul>
+
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Helpful Link</h4>
+                        <ul>
+                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subscription-form">
+                    <h4>Subscribe to our Newsletter</h4>
+                    <form class="footer-input-form">
+                        <input type="text" class="footer-input" id="footer-input" placeholder="Subscribe to our Newsletter">
+                        <button type="submit" class="footer-input-button">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Copyright © 2021 Reverifi. All rights reserved</p>
+        </div>
+    </footer>
+</body>
 </html>
