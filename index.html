@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverifi Copy</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+
+            <!--Hamburger button for mobile-->
+            <button class="hamburger">
+                <img src="icons/menu.svg">
+            </button>
+
+            <a href="#" class="logo">
+                <img src="icons/reverifi-logo-green.svg" alt="Reverifi Logo">
+            </a>
+            <div></div>
+
+            <!--Navigations and buttons for desktop-->
+            <div class="header-right-group">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">How we Work</a></li>
+                        <li><a href="#">Find an Agent</a></li>
+                        <li><a href="#">Knowledge Center</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="#" class="btn btn-secondary">Sign In</a>
+                    <a href="#" class="btn btn-primary">Join Now</a>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="top-container">
+                    <h1>Search our listings for your next purchase</h1>
+                    <form class="search-form">
+                        <img src="icons/location-grey.svg" alt="Location" class="search-icon">
+                        <input type="text" class="search-input" id="search-input" placeholder="Enter City, neighborhood, ZIP, or address">
+                        <button type="submit" class="search-button">
+                            <img src="icons/search.svg" alt="Search">
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="hero-logo">
+                    <img src="icons/home-icon.svg" alt="House">
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="container">
+                <h2 class="section-title">Our Featured Listing</h2>
+                <div class="listing-card">
+                    <div>
+                        <div class="card-image">
+                            <img src="images/appartment.png" class="appartment" alt="Living room of the appartment">
+                            <span class="tag">New</span>
+                            <img src="images/avatar.png" alt="Real estate agent" class="agent-avatar">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header">
+                                <h3>Appartment#1</h3>
+                                <span class="distance">
+                                    <img src="icons/location-grey.svg" alt="distance">
+                                    1.1km away
+                                </span> 
+                            </div>
+                            <p class="address">Bronx, NY 10459</p>
+                            <div class="card-features">
+                                <span><img src="icons/2.svg" alt="2"></span>
+                                <span><img src="icons/bedroom.svg" alt="bedroom"></span>
+                                <span><img src="icons/wifi.svg" alt="WiFi"></span>
+                                <span><img src="icons/bathroom.svg" alt="Bathroom"></span>
+                                <span><img src="icons/air-conditioner.svg" alt="Air Conditioner"></span>
+                                <span><img src="icons/bench.svg" alt="Bench"></span>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">$30,000</p>
+                                <div class="card-actions">
+                                    <button class="action-btn"><img src="icons/heart.svg" alt="Favoirte"></button>
+                                    <button class="action-btn"><img src="icons/share.svg" alt="Share"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-image">
+                            <img src="images/appartment2.png" class="appartment" alt="Living room of the appartment">
+                            <span class="tag rent">Rent</span>
+                            <img src="images/avatar.png" alt="Real estate agent" class="agent-avatar">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header">
+                                <h3>Appartment#1</h3>
+                                <span class="distance">
+                                    <img src="icons/location-grey.svg" alt="distance">
+                                    1.1km away
+                                </span> 
+                            </div>
+                            <p class="address">Bronx, NY 10459</p>
+                            <div class="card-features">
+                                <span><img src="icons/2.svg" alt="2"></span>
+                                <span><img src="icons/bedroom.svg" alt="bedroom"></span>
+                                <span><img src="icons/wifi.svg" alt="WiFi"></span>
+                                <span><img src="icons/bathroom.svg" alt="Bathroom"></span>
+                                <span><img src="icons/air-conditioner.svg" alt="Air Conditioner"></span>
+                                <span><img src="icons/bench.svg" alt="Bench"></span>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">$123/Month</p>
+                                <div class="card-actions">
+                                    <button class="action-btn active"><img src="icons/heart.svg" alt="Favoirte"></button>
+                                    <button class="action-btn"><img src="icons/share.svg" alt="Share"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div>
+                        <div class="card-image">
+                            <img src="images/appartment3.png" class="appartment" alt="Living room of the appartment">
+                            <span class="tag">New</span>
+                            <span class="tag sale">Sale</span>
+                            <img src="images/avatar.png" alt="Real estate agent" class="agent-avatar">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header">
+                                <h3>Appartment#1</h3>
+                                <span class="distance">
+                                    <img src="icons/location-grey.svg" alt="distance">
+                                    1.1km away
+                                </span> 
+                            </div>
+                            <p class="address">Bronx, NY 10459</p>
+                            <div class="card-features">
+                                <span><img src="icons/2.svg" alt="2"></span>
+                                <span><img src="icons/bedroom.svg" alt="bedroom"></span>
+                                <span><img src="icons/wifi.svg" alt="WiFi"></span>
+                                <span><img src="icons/bathroom.svg" alt="Bathroom"></span>
+                                <span><img src="icons/air-conditioner.svg" alt="Air Conditioner"></span>
+                                <span><img src="icons/bench.svg" alt="Bench"></span>
+                            </div>
+                            <div class="card-footer">
+                                <p class="price">$30,000</p>
+                                <div class="card-actions">
+                                    <button class="action-btn"><img src="icons/heart.svg" alt="Favoirte"></button>
+                                    <button class="action-btn"><img src="icons/share.svg" alt="Share"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                     
+                </div>
+                <div class="pagination">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="events">
+            <div class="container">
+                <h2 class="section-title">Events</h2>
+                <div class="event-tabs">
+                    <button class="tab active">All</button>
+                    <button class="tab">Upcoming</button>
+                    <button class="tab">Past</button>
+                </div>
+                <div class="event-card">
+                    <div>
+                        <div class="event-card-image">
+                            <img src="images/presentation-room.png" alt="Presentation Room">
+                            <div class="event-date">
+                                <span class="day">08</span>
+                                <span class="month">OCT</span>
+                            </div>
+                            <div class="paths">
+                                <span class="path left">
+                                    <img src="icons/path-left.svg" alt="" class="left">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="event-card-body">
+                            <div class="upper-body">
+                                <h3 class="card-title">Lorem ipsum</h3>
+
+                                <div class="event-buttons">
+                                    <button class="plus-button"><img src="icons/plus-button.svg" alt=""></button>
+                                    <button class="share-button"><img src="icons/share.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <p class="event-location">7:30 - 10:30PM @someplace</p>
+                            <div class="event-info">
+                                <div class="event-attendees">
+                                    <div class="attendees-icons">
+                                        <img src="icons/people.svg" alt="" class="people">
+                                        <span class="count">182</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="event-card-image">
+                            <img src="images/presentation-room.png" alt="Presentation Room">
+                            <div class="event-date">
+                                <span class="day">08</span>
+                                <span class="month">OCT</span>
+                            </div>
+                        </div>
+                        <div class="event-card-body">
+                            <div class="upper-body">
+                                <h3 class="card-title">Lorem ipsum</h3>
+
+                                <div class="event-buttons">
+                                    <button class="plus-button"><img src="icons/plus-button.svg" alt=""></button>
+                                    <button class="share-button"><img src="icons/share.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <p class="event-location">7:30 - 10:30PM @someplace</p>
+                            <div class="event-info">
+                                <div class="event-attendees">
+                                    <div class="attendees-icons">
+                                        <img src="icons/people.svg" alt="" class="people">
+                                        <span class="count">182</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="event-card-image">
+                            <img src="images/presentation-room.png" alt="Presentation Room">
+                            <div class="event-date">
+                                <span class="day">08</span>
+                                <span class="month">OCT</span>
+                            </div>
+                            <div class="paths">
+                                <span class="path right">
+                                    <img src="icons/path-right.svg" alt="" class="right">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="event-card-body">
+                            <div class="upper-body">
+                                <h3 class="card-title">Lorem ipsum</h3>
+
+                                <div class="event-buttons">
+                                    <button class="plus-button"><img src="icons/plus-button.svg" alt=""></button>
+                                    <button class="share-button"><img src="icons/share.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <p class="event-location">7:30 - 10:30PM @someplace</p>
+                            <div class="event-info">
+                                <div class="event-attendees">
+                                    <div class="attendees-icons">
+                                        <img src="icons/people.svg" alt="" class="people">
+                                        <span class="count">182</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="event-card-image">
+                            <img src="images/presentation-room.png" alt="Presentation Room">
+                            <div class="event-date">
+                                <span class="day">08</span>
+                                <span class="month">OCT</span>
+                            </div>
+                            <div class="paths">
+                                <span class="path right">
+                                    <img src="icons/path-right.svg" alt="" class="right">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="event-card-body">
+                            <div class="upper-body">
+                                <h3 class="card-title">Lorem ipsum</h3>
+
+                                <div class="event-buttons">
+                                    <button class="plus-button"><img src="icons/plus-button.svg" alt=""></button>
+                                    <button class="share-button"><img src="icons/share.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <p class="event-location">7:30 - 10:30PM @someplace</p>
+                            <div class="event-info">
+                                <div class="event-attendees">
+                                    <div class="attendees-icons">
+                                        <img src="icons/people.svg" alt="" class="people">
+                                        <span class="count">182</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="reverifi-plus">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title"><img src="icons/reverifi+.svg" alt="reverifi+"></h2>
+                    <p class="paragraph">
+                        Search our network and find your supporting team to complete the process
+                    </p>
+                    <button class="see-more">See More</button>
+                </div>
+                <div class="section-footer">
+                    <div class="section-icons">
+
+                        <div class="service-item">
+                            <img src="icons/attorney.svg" alt="Attorney icon">
+                            <span>Attorney</span>
+                        </div>
+                    
+                        <div class="service-item">
+                            <img src="icons/camera.svg" alt="Camer icon">
+                            <span>Photographer</span>
+                        </div>
+                    
+                        <div class="service-item">
+                            <img src="icons/agent.svg" alt="Agent icon">
+                            <span>Agent</span>
+                        </div>
+                    
+                        <div class="service-item">
+                            <img src="icons/clean.svg" alt="Cleaning icon">
+                            <span>Cleaning<br>Services</span>
+                        </div>
+                    
+                        <div class="service-item">
+                            <img src="icons/inspection.svg" alt="Home Inspectors icon">
+                            <span>Home<br>Inspectors</span>
+                        </div>
+                    
+                        <div class="service-item">
+                            <img src="icons/insurance.svg" alt="Insurance Provider icon">
+                            <span>Insurance<br>Provider</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore">
+    <div class="container">
+        <h2 class="section-title">Explore our Listings</h2>
+        
+        <div class="explore-grid">
+            <div class="location-card nyc">
+                <img src="images/nyc.png" alt="A street in New York City" class="location-image">
+                <div class="location-overlay"></div>
+                <div class="location-content">
+                    <h3>New York</h3>
+                    <p>2 Listings</p>
+                </div>
+            </div>
+
+            <div class="location-card california">
+                <img src="images/california.png" alt="Golden Gate Bridge in California" class="location-image">
+                <div class="location-overlay"></div>
+                <div class="location-content">
+                    <h3>California</h3>
+                    <p>43 Listings</p>
+                </div>
+            </div>
+
+            <div class="location-card florida">
+                <img src="images/florida.png" alt="Beachfront in Florida" class="location-image">
+                <div class="location-overlay"></div>
+                <div class="location-content">
+                    <h3>Florida</h3>
+                    <p>23 Listings</p>
+                </div>
+            </div>
+
+            <div class="location-card hawaii">
+                <img src="images/hawaii.png" alt="Mountains in Hawaii" class="location-image">
+                <div class="location-overlay"></div>
+                <div class="location-content">
+                    <h3>Hawaii</h3>
+                    <p>53 Listings</p>
+                </div>
+            </div>
+
+            <div class="location-card alaska">
+                <img src="images/alaska.png" alt="Snowy landscape in Alaska" class="location-image">
+                <div class="location-overlay"></div>
+                <div class="location-content">
+                    <h3>Alaska</h3>
+                    <p>5 Listings</p>
+                </div>
+            </div>
+
+            <div class="location-card jersey">
+                <img src="images/new-jersey.png" alt="Cityscape of New Jersey" class="location-image">
+                <div class="location-overlay"></div>
+                <div class="location-content">
+                    <h3>New Jersey</h3>
+                    <p>89 Listings</p>
+                </div>
+            </div>
+
+            <div class="location-card georgia">
+                <img src="images/georgia.png" alt="City in Georgia" class="location-image">
+                <div class="location-overlay"></div>
+                <div class="location-content">
+                    <h3>Georgia</h3>
+                    <p>17 Listings</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+</section>
+
+        <section class="claim-address">
+            <div class="container">
+                <div class="section-center">
+                    <div class="styled-location"><img src="icons/location-styled.svg" alt=""></div>
+
+                    <h2 class="section-title">Claim your Address</h2>
+                    <form class="search-form">
+                        <img src="icons/location-grey.svg" alt="Location" class="search-icon">
+                        <input type="text" class="search-input" id="search-input" placeholder="Enter your address">
+                        <button type="submit" class="search-button">
+                            <img src="icons/search.svg" alt="Search">
+                        </button>   
+                    </form>
+                </div>
+                <div class="section-footer">
+                    <div class="footer-text">
+                        <p>Start your real estate journey with <img src="icons/reverifi-logo-white.svg" alt=""></p>
+                        <button class="join-btn">Join us</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="social-links">
+                    <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="icons/youtube.svg" alt="YouTube"></a>
+                    <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+
+                <a href="#" class="footer-logo">
+                    <img src="icons/reverifi-logo-green.svg" alt="Reverifi logo">
+                </a>
+
+                <ul class="contact-info">
+                    <li><img src="icons/location-green.svg" alt=""> 712-427-1242</li>
+                    <li><img src="icons/mail.svg" alt=""> support@example.com</li>
+                    <li><img src="icons/phone.svg" alt=""> 319-764-9876</li>
+                </ul>
+
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Helpful Link</h4>
+                        <ul>
+                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subscription-form">
+                    <h4>Subscribe to our Newsletter</h4>
+                    <form class="footer-input-form">
+                        <input type="text" class="footer-input" id="footer-input" placeholder="Subscribe to our Newsletter">
+                        <button type="submit" class="footer-input-button">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Copyright © 2021 Reverifi. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
